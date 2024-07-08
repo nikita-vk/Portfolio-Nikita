@@ -69,7 +69,7 @@ open3D.onclick = function() {
     modalImg1.src = "iphone-images/3D_Print.jpeg";
     modalImg1.alt = "3D Print of BreatheRight";
     modalImg2.style.display = "none"; 
-    captionText.innerHTML = "App Dashboard";
+    captionText.innerHTML = "Different angles of 3D printed Device";
 }
 
 openUI.onclick = function() {

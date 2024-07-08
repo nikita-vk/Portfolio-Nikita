@@ -26,7 +26,7 @@ openMarket.onclick = function() {
     modal.style.display = "block";
     modalImg1.src = "Market_Analysis.png";
     modalImg1.alt = "Market Analysis";
-    modalImg2.style.display = "none"; // Hide the second image if not needed
+    modalImg2.style.display = "none"; 
     captionText.innerHTML = "Market Analysis";
 }
 
@@ -34,7 +34,7 @@ openFMEA.onclick = function() {
     modal.style.display = "block";
     modalImg1.src = "FMEA_Table_BreatheRight.png";
     modalImg1.alt = "FMEA Table";
-    modalImg2.style.display = "none"; // Hide the second image if not needed
+    modalImg2.style.display = "none"; 
     captionText.innerHTML = "FMEA Table";
 }
 
@@ -42,7 +42,7 @@ openCircuit.onclick = function() {
     modal.style.display = "block";
     modalImg1.src = "Circuit_analysis.png";
     modalImg1.alt = "Electric Circuit Analysis";
-    modalImg2.style.display = "none"; // Hide the second image if not needed
+    modalImg2.style.display = "none"; 
     captionText.innerHTML = "Electric Circuit Analysis";
 }
 
@@ -50,7 +50,7 @@ openFlowCurve.onclick = function() {
     modal.style.display = "block";
     modalImg1.src = "Quality_Assurance.png";
     modalImg1.alt = "Quality Assurance";
-    modalImg2.style.display = "none"; // Hide the second image if not needed
+    modalImg2.style.display = "none"; 
     captionText.innerHTML = "Quality Assurance- This graph compares our peak flow sensor against a gold standard peak flow sensor to ensure that the device works properly";
 }
 
@@ -63,11 +63,20 @@ openCAD.onclick = function() {
     modalImg2.style.display = "block"; // Show the second image
     captionText.innerHTML = "CAD (OnShape)";
 }
+
+open3D.onclick = function() {
+    modal.style.display = "block";
+    modalImg1.src = "iphone-images/3D_Print.jpeg";
+    modalImg1.alt = "3D Print of BreatheRight";
+    modalImg2.style.display = "none"; 
+    captionText.innerHTML = "App Dashboard";
+}
+
 openUI.onclick = function() {
     modal.style.display = "block";
     modalImg1.src = "UI_Wireframe.png";
     modalImg1.alt = "UI Wireframe";
-    modalImg2.style.display = "none"; // Hide the second image if not needed
+    modalImg2.style.display = "none"; 
     captionText.innerHTML = "App Dashboard";
 }
 
@@ -75,7 +84,7 @@ openArduino.onclick = function() {
     modal.style.display = "block";
     modalImg1.src = "iphone-images/Wheelchair_Code.png";
     modalImg1.alt = "Wheelchair Code";
-    modalImg2.style.display = "none"; // Hide the second image if not needed
+    modalImg2.style.display = "none"; 
     captionText.innerHTML = "Wheelchair Code";
 }
 
@@ -83,7 +92,7 @@ openWCircuit.onclick = function() {
     modal.style.display = "block";
     modalImg1.src = "iphone-images/Wheelchair_Circuit.png";
     modalImg1.alt = "Wheelchair Circuit";
-    modalImg2.style.display = "none"; // Hide the second image if not needed
+    modalImg2.style.display = "none"; 
     captionText.innerHTML = "Wheelchair Circuit";
 }
 
@@ -91,7 +100,7 @@ openWCAD.onclick = function() {
     modal.style.display = "block";
     modalImg1.src = "iphone-images/Wheelchair_CAD.png";
     modalImg1.alt = "Wheelchair CAD";
-    modalImg2.style.display = "none"; // Hide the second image if not needed
+    modalImg2.style.display = "none"; 
     captionText.innerHTML = "Wheelchair CAD";
 }
 

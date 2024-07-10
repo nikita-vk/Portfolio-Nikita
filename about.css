@@ -1,0 +1,106 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 10px solid black;
+    border: 10px solid black;
+}
+
+/* Header styles */
+header {
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 14px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Projects section styles */
+.projects {
+    text-align: center;
+    padding: 30px;
+}
+
+.project-section {
+    padding: 30px 30px 0 30px; /* Adjust padding to ensure no extra space */
+    margin-bottom: 10px;
+    border-top: 10px solid black;
+}
+
+.Projdate {
+    font-size: 1em;
+    color: rgb(118, 116, 116);
+    justify-self: end;
+}
+
+.project-section h4 {
+    padding-top: 20px;
+}
+
+.allContent {
+    display: flex;
+}
+
+.allContent p {
+    flex: 60%;
+    padding-right: 20px; /* Add some padding to the right for better spacing */
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    flex: 40%;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

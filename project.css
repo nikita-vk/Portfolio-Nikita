@@ -58,7 +58,16 @@ nav ul li a {
     margin-bottom: 10px;
     border-top: 10px solid black;
 }
+.Projdate{
+    font-size: 1em;
+    color: rgb(118, 116, 116);
+    justify-self: end;
 
+}
+
+.project-section h4 {
+    padding-top: 20px;
+}
 .BreatheRight-image {
     display: flex;
     gap: 20px;
@@ -274,6 +283,11 @@ section h3 {
     margin-top: 50px;
 }
 
+.Truss-Code{
+    
+    
+    color: #000;
+}
 
 /* Footer styles */
 footer {

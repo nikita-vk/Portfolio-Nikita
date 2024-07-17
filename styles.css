@@ -1,30 +1,32 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+    background-color: #a6908033;
     color: #333;
     min-height: 100vh;
+    overflow-x: hidden;
+    margin: 10px solid #AC8968;
+    border: 10px solid #AC8968;
+    display: flex;
     flex-direction: column;
     gap: 14px;
+    height: 100vh;
+    
 }
 
 header {
-    background-color: #000;
+    background-color: #AC8968;
     padding: 10px 20px;
-
 }
 
 nav ul {
     list-style: none;
     padding: 14px;
-    margin: 0;
     display: flex;
     justify-content: space-around;
 }
@@ -34,19 +36,32 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #3e362eee;
     text-decoration: none;
     font-weight: bold;
 }
 
 .font {
     font-size: 50px;
-    font-family:sans-serif;
+    color: #3e362ec6;
+    align-items: center;
+    display: flex; /* Ensure centering */
+    
+    justify-content: center;
+}
+
+.font2{
+    font-size: 50px;
+    color: #3e362ec6;
+    align-items: center;
+    display: flex; /* Ensure centering */
+    
+    justify-content: center;
+    margin-left: 40%;
 }
 main {
     display: flex;
-    
-    
+    flex-grow: 1;
 }
 
 .intro {
@@ -55,93 +70,112 @@ main {
 }
 
 .welcome {
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     margin-top: 30px;
 }
 
+.images {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .inspiration-image {
-    max-width: 50%;
-    height: auto;
-    margin-right: 20px; 
-    border-radius: 182px;/* Add margin to separate image from text */
+    z-index: 1;
+    width: 350px;
+    height: 421px;
+    left: 95px;
+    right: 373px;
+    margin-top: 58px;
+    margin-bottom: 10px;
+    margin-left: 49px;
+}
+
+.Ellipses {
+    z-index: 0;
+    width: 450px;
+    height: 480px;
+    margin-bottom: 10px;
+    
+   
 }
 
 .text {
-    flex: 1; /* Allow the text to take up remaining space */
+    position: relative;
+    z-index: 1;
+    max-width: 420px;
+    margin-left: 200px; /* Shift to the right */
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.green-ellipse {
+    position: absolute;
+    z-index: -1;
+    width: 620px;
+    height: 380px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    top: 0;
+    left: 45%;
+    
+    
 }
 
 .text h6 {
-    margin-top: 0; /* Remove default margin from heading */
-    margin-bottom: 10px; 
+    margin-top: -80px;
+    text-align: center;
+    margin-bottom: 10px;
     font-size: 2.5em;
     font-weight: bolder;
+    color: #3e362ec6;
+    white-space: nowrap;
 }
 
 .text p {
-    margin-top: 0; /* Remove default margin from paragraph */
+    margin-top: 40px;
+    font-weight:bold;
+    color: #3e362eed;
+    font-family: Arial, sans-serif;
 }
 
-.text a{
+.text a {
     text-decoration: underline black;
     color: #000;
 }
-.projects {
-    text-align: center;
-    padding: 30px;
-}
 
-.awards{
-    overflow: auto;
-    margin: auto;
-}
 footer {
     text-align: center;
-    padding: 5px;
-    background-color: #000;
-    color: #fff;
+    padding: 10px;
+    font-size: larger;
+    background-color: #AC8968;
+    color: #3e362eee;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-.skills {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.skills ul {
-    width: 50%;
-    list-style-type: disc;
-}
-
-.images {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.images img {
-    width: 80%;
-    margin-bottom: 20px;
-}
-
-
-
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {

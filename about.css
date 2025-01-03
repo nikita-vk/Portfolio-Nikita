@@ -13,20 +13,20 @@
 /* General body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #a6908033;
     color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
-    margin: 10px solid black;
-    border: 10px solid black;
+    margin: 10px solid #AC8968;
+    border: 10px solid #AC8968;
 }
 
 /* Header styles */
 header {
-    background-color: #000;
+    background-color: #AC8968;
     padding: 10px 20px;
 }
 
@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #3e362eee;
     text-decoration: none;
     font-weight: bold;
 }
@@ -57,7 +57,7 @@ nav ul li a {
 .project-section {
     padding: 30px 30px 0 30px; /* Adjust padding to ensure no extra space */
     margin-bottom: 10px;
-    border-top: 10px solid black;
+    border-top: 10px solid #AC8968;
 }
 
 .Projdate {
@@ -98,8 +98,9 @@ nav ul li a {
 footer {
     text-align: center;
     padding: 5px;
-    background-color: #000;
-    color: #fff;
+    font-size: larger;
+    background-color: #AC8968;
+    color: #3e362eee;
     position: fixed;
     width: 100%;
     bottom: 0;
